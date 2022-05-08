@@ -45,7 +45,7 @@ Project can be found online at https://test-crud-project.herokuapp.com/. You can
   pip install -r requirements.txt
   ```
   
- - Add your api key and list_id in `subscribers/views.py`. **This is necessary in order the project runs correctly**
+ - Add your api key and list_id in `subscribers/views.py`. **This is necessary in order so that the project runs correctly**
 
 - Run the server
 
