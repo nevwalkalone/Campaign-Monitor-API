@@ -4,7 +4,7 @@ This project is a simple web app which manages a mail list with the use of the [
 
 ## Created With
 
-- [Bootstrap](https://getbootstrap.com/])
+- [Bootstrap](https://getbootstrap.com/)
 - [Django](https://www.djangoproject.com/)
 
 This is a first attempt of building a web app using the Django framework, as well as consuming an API in general.
