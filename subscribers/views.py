@@ -4,11 +4,11 @@ from createsend import *
 
 
 # replace it with your Campaign Monitor API key
-api_key = 'COVVLZjeGCvrNkl9Q8kajdOE0UGAv2co0DKejHI8l6Kth+vHnc7QmaB8G65ONeEME7DWxSmZ1tbkr8DJKRhEzOv0Ifclf2CDbawlHZHumPuuekl4vqgYLb+FP9/zCY2EdL1qhM7aFwmydvQuNBlDnw=='
+api_key = '<your_api_key>'
 auth = {'api_key': api_key}
 
 # replace it with the list id of your choice
-list_id = "a94f7e69caaf3e3193897af3b643c0d0"
+list_id = "<your_list_id>"
 
 
 def get_active_subs():
@@ -25,6 +25,7 @@ def get_active_subs():
         message = "empty"
 
     return active_subs, message
+
 
 
 def subscribers_list(request):
