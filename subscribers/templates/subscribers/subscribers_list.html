@@ -1,0 +1,36 @@
+{% extends "subscribers/base.html" %}
+
+{% block content %}
+
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Full Name</td>
+            <td>Email</td>
+            <td>
+                <a href="{% url 'insert_subscriber' %}" class="btn btn-outline-success">
+                    <i class="fas fa-plus"></i> Add New
+
+                </a>
+            </td>
+    </thead>
+    <tbody>
+        {% if message == "not-empty" %}
+
+        {% for subscriber in subscribers_list %}
+            
+        <tr>
+            <td>{{ subscriber.Name }}</td>
+            <td>{{ subscriber.EmailAddress }}</td>
+            <td>
+                <a href="delete/{{ subscriber.EmailAddress}}" class="btn text-secondary px-0">
+                    <i class="fas fa-trash-alt fa-lg text-danger"></i>         
+                </a>       
+            </td>
+        </tr>      
+        {% endfor %}
+        {% endif %}
+    </tbody>
+</table>
+
+{% endblock %}
